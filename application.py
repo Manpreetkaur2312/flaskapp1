@@ -5,4 +5,7 @@ application = Flask(__name__)
 
 @application.route('/')
 def hello():
-    return 'Good Morning , Everyone!!!! from Manpreet .....//...001'
+    return 'Hello, World! from manpreet'
+if __name__ == "__main__":
+    application.debug = True
+    application.run(host="0.0.0.0")
